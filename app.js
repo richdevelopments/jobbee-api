@@ -26,17 +26,19 @@ process.on('uncaughtException', err => {
     process.exit(1);
 });
 
-// Set up body parser
-app.use(bodyParser.urlencoded({ extended : true }));
-
 // Conneting to database
 connectDatabase();
+
+// Set up body parser
+app.use(bodyParser.urlencoded({ extended : true }));
 
 // Setup security headers
 app.use(helmet());
 
 // Setup body parser
 app.use(express.json());
+
+app.use(express.static('public'));
 
 // Set cookie parser
 app.use(cookieParser());
