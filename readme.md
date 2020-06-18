@@ -9,4 +9,4 @@ https://documenter.getpostman.com/view/7871112/SzzkdxbS
 npm i
 ```
 ## Config.env 
-Replace all environment variables values wit your's.
+Replace all environment variables values with your's.
